@@ -1,0 +1,10 @@
+version: '3'
+services:
+  react-app:
+    build:
+      context: .  # Diretório onde está o Dockerfile
+      dockerfile: Dockerfile  # Nome do Dockerfile
+    ports:
+      - "3000:3000"  # Mapeamento de portas do host para o contêiner
+    volumes:
+      - .:/app  # Mapeamento de volumes para permitir hot-reloading
