@@ -4,7 +4,10 @@ import './styles.css';
 export default class Login extends Component {
   render() {
     return (
-      <div>Login</div>
+      <div>
+        <p>Login</p>
+
+      </div>
     );
   }
 }
